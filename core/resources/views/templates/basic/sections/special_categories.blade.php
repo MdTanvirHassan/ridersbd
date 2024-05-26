@@ -75,7 +75,7 @@
                             <div style="border-top: 3px solid #000; width: 12%;"></div>
                         </div>
                     </div>
-                    <div>
+                    <div class="px-4">
                         <ul style="list-style-type: circle;" class="">
                             <li style="list-style-type: circle;">
                                 <a href="http://Riders Import &amp; Export" target="_blank" rel="noopener"

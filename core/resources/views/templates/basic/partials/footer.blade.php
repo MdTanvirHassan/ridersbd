@@ -108,6 +108,12 @@
                                             background-color: #05a50d;
                                             color: #ffffff !important;
                                         }
+
+                                        @media (max-width: 991px) {
+                                            body {
+                                                padding-bottom: 0px;
+                                            }
+                                        }
                                     </style>
                                     <div class="elementor-social-icons-wrapper">
                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
