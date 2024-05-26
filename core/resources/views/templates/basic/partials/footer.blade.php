@@ -170,6 +170,8 @@
 
     li {
         font-size: 15px;
+        padding: 0;
+        margin-top:-15px; 
     }
 
     .develop-by {
@@ -181,7 +183,7 @@
     }
 </style>
 <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo"
-    style="background-color: #ff6900; color:#ffffff!important" class="p-5 shadow-lg d-none d-md-block">
+    style="background-color: #ff6900; color:#ffffff!important" class="p-3 shadow-lg d-none d-md-block">
     <div class='d-flex container'>
         <div class="mr-5">
             <div class="" data-id="65d90d50" data-element_type="widget" data-widget_type="heading.default">
@@ -300,16 +302,6 @@
                                         <span class="">Food & Beverage Machinery</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mt-4">
-                    <div class="" data-id="4ac329be" data-element_type="widget"
-                        data-widget_type="icon-list.default">
-                        <div class="">
-                            <ul class="">
                                 <li class="">
                                     <a class="footer-link"
                                         href="https://ridersgroupbd.com/product-category/machinery/packaging-machines/">
@@ -328,13 +320,6 @@
                                         <span class="">Plastic & Rubber Processing Machinery</span>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-4012f7fb elementor-icon-list--layout-traditional elementor-list-item-link-full_width exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon-list"
-                        data-id="4012f7fb" data-element_type="widget" data-widget_type="icon-list.default">
-                        <div class="">
-                            <ul class="">
                                 <li class="">
                                     <a class="footer-link"
                                         href="https://ridersgroupbd.com/product-category/consumer-electronics/">
@@ -344,16 +329,23 @@
                                         <span class="">Consumer Electronics</span>
                                     </a>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="" data-id="15b29455" data-element_type="widget"
+                <div class="col-md-6 mt-4">
+                    <div class="" data-id="4ac329be" data-element_type="widget"
                         data-widget_type="icon-list.default">
+                        <div class="">
+                            <ul class="">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-4012f7fb elementor-icon-list--layout-traditional elementor-list-item-link-full_width exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon-list"
+                        data-id="4012f7fb" data-element_type="widget" data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
                                 <li class="">
@@ -373,15 +365,34 @@
                                         <span class="">Vehicle Parts & Accessories</span>
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a class="footer-link"
+                                        href="https://www.ridersgroupbd.com/product-category/sports-entertainment/">
+                                        <span class="">
+                                            <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                        <span class="elementor-icon-list-text">Sports &amp; Entertainment</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="footer-link"
+                                        href="https://www.ridersgroupbd.com/product-category/home-garden/">
+                                        <span class="">
+                                            <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                        <span class="elementor-icon-list-text">Home & Garden</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="footer-link"
+                                        href="https://www.ridersgroupbd.com/product-category/beauty-personal-care/">
+                                        <span class="">
+                                            <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                        </span>
+                                        <span class="elementor-icon-list-text">Beauty &amp; Personal Care</span>
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="" data-id="61bd0b3" data-element_type="widget"
-                        data-widget_type="button.default">
-                        <div class="">
                             <div class="">
                                 <a class="footer-link" href="https://ridersgroupbd.com/shop/">
                                     <span class="">
@@ -392,6 +403,29 @@
                                     </span>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="" data-id="15b29455" data-element_type="widget"
+                        data-widget_type="icon-list.default">
+                        <div class="">
+                            <ul class="">
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="" data-id="61bd0b3" data-element_type="widget"
+                        data-widget_type="button.default">
+                        <div class="">
+                            
                         </div>
                     </div>
                 </div>
