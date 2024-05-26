@@ -8,7 +8,8 @@
 <!-- Footer Section Starts Here -->
 
 <!-- Footer Section Ends Here -->
-<div style="    background-color: transparent; background-image: linear-gradient(35deg, #030303 45%, #3D3D3D 45%); color:white">
+<div class="full-container" style="background-color: transparent; background-image: linear-gradient(35deg, #030303 45%, #3D3D3D 45%); color:white">
+    <div class="container">
     <div class="row p-5">
         {{-- <div class="col-12"> --}}
         <div class="col-sm-12 col-md-6">
@@ -24,7 +25,7 @@
                     </li>
                 </ul>
                 <div class="">
-                    <h4 class="">Md. Towhidur Rahman (C.E.O)</h4>
+                    <h4 class="text-white pb-1">Md. Towhidur Rahman (C.E.O)</h4>
                 </div>
                 <div class="">
                     <p>
@@ -141,12 +142,36 @@
     </div>
 </div>
 </div>
+</div>
 
 {{-- jjjjj  --}}
+<style>
+    .text-color {
+        color: #ffffff;
+    }
+
+    a {
+        color: #ffffff ;
+    }
+    .footer-link:hover{
+        color: #030303;
+        font-weight: bold;
+    }
+
+    li {
+        font-size: 15px;
+    }
+    .develop-by{
+        color: #ff6900;
+    }
+    .develop-by:hover{
+        color: #3b5998;
+    }
+</style>
 <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo"
     style="background-color: #ff6900; color:#ffffff!important" class="p-5 shadow-lg">
-    <div class='d-flex'>
-        <div class="">
+    <div class='d-flex container'>
+        <div class="mr-5">
             <div class="" data-id="65d90d50" data-element_type="widget" data-widget_type="heading.default">
                 <div class="">
                     <h3 class="text-white">Our Company</h3>
@@ -154,22 +179,10 @@
             </div>
             <div class="" data-id="39971a03" data-element_type="widget" data-widget_type="icon-list.default">
                 <div class="">
-                    <style>
-                        .text-color {
-                            color: #ffffff;
-                        }
-
-                        a {
-                            color: #ffffff ;
-                        }
-
-                        li {
-                            font-size: 14px;
-                        }
-                    </style>
+                    
                     <ul class="text-white">
                         <li class="text-color">
-                            <a href="https://ridersgroupbd.com/">
+                            <a  class="footer-link"  href="https://ridersgroupbd.com/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -177,7 +190,7 @@
                             </a>
                         </li>
                         <li class="text-color">
-                            <a href="https://ridersgroupbd.com/about-us/">
+                            <a class="footer-link" href="https://ridersgroupbd.com/about-us/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -185,19 +198,23 @@
                             </a>
                         </li>
                         <li class="">
+                            <a href="#" class="footer-link">
                             <span class="">
                                 <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                             </span>
                             <span class="">Distributor Enquiry Form</span>
+                        </a> 
                         </li>
                         <li class="">
+                            <a href="#" class="footer-link">
                             <span class="">
                                 <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                             </span>
                             <span class="">Testimonial</span>
+                        </a> 
                         </li>
                         <li class="">
-                            <a href="https://ridersgroupbd.com/video-gallery/">
+                            <a  class="footer-link"  href="https://ridersgroupbd.com/video-gallery/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -205,13 +222,15 @@
                             </a>
                         </li>
                         <li class="">
+                            <a href="#" class="footer-link">
                             <span class="">
                                 <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                             </span>
                             <span class="">Sitemap</span>
+                        </a> 
                         </li>
                         <li class="">
-                            <a href="https://ridersgroupbd.com/contact-us/">
+                            <a class="footer-link"  href="https://ridersgroupbd.com/contact-us/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -222,7 +241,7 @@
                 </div>
             </div>
         </div>
-        <div class="px-5">
+        <div class="px-5 ml-5">
             <div class="row">
                 <div class="col-md-6">
                     <div class="" data-id="214e3ffc" data-element_type="widget" data-widget_type="heading.default">
@@ -234,7 +253,7 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/machinery/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -248,7 +267,7 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/machinery/apparel-textile-machinery/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/apparel-textile-machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -256,7 +275,7 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/machinery/food-beverage-machinery/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/food-beverage-machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -273,7 +292,7 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/machinery/packaging-machines/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/packaging-machines/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -296,7 +315,7 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/consumer-electronics/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/consumer-electronics/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -315,7 +334,7 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/apparel/">
+                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/apparel/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -323,7 +342,7 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/vehicle-parts-accessories/">
+                                    <a  class="footer-link" href="https://ridersgroupbd.com/product-category/vehicle-parts-accessories/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -339,7 +358,7 @@
                     <div class="" data-id="61bd0b3" data-element_type="widget" data-widget_type="button.default">
                         <div class="">
                             <div class="">
-                                <a class="" href="https://ridersgroupbd.com/shop/">
+                                <a  class="footer-link"  href="https://ridersgroupbd.com/shop/">
                                     <span class="">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-plus"></i>
@@ -359,23 +378,12 @@
 </footer>
 
 
-<section class="p-4" style="background-image: linear-gradient(rgb(204, 198, 198), white);">
-    <div class="">
-
-        <div class="">
-            <span class="text-sm" style="font-size: 14px">Copyright © 2024 RIDERS Star Group Ltd. | Powered by RIDERS Star Group Ltd.</span>
-        </div>
-
-    </div>
-    <div class="">
-
-        <div class="">
-            <a href="https://f3solution.com/">
-                <span class="text-dark"  style="font-size: 14px">Design &amp;Development by F3 Solution</span>
-            </a>
-        </div>
-
-    </div>
+<section class="p-2" style="background-image: linear-gradient(rgb(204, 198, 198), white);">
+        <div class="container">
+            <span class="text-sm" style="font-size: 14px">Copyright © 2024 RIDERS Star Group Ltd. | <a href="https://f3solution.com/">
+                <span class="develop-by"  style="font-size: 14px">Design &amp;Development by F3 Solution</span>
+            </a></span>
+        </div>    
 </section>
 
 

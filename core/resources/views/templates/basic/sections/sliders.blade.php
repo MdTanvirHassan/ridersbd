@@ -12,7 +12,7 @@
     .image-container img {
         width: 50vw!important;
         height: 70vh!important;
-        object-fit: fill!important; 
+        object-fit: fill!important;   
     }
     .banner-section,.banner-slider ,.owl-theme ,.owl-carousel {
         padding: 0;

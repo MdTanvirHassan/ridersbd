@@ -6,10 +6,10 @@
                 <div class="header-top-wrap d-flex flex-wrap justify-content-between align-items-center">
                     <div class="right-side">
                         <ul>
+                            <li><a href="{{route('order-track')}}">@lang('+88 01989 699 314')</a></li>
+                            <li><a href="{{route('order-track')}}">@lang('info@ridersgroupbd.com')</a></li>
 
                             <li><a href="{{route('order-track')}}">@lang('3/A, Fair Plaza, Level-10 Mirpur-1, Dhaka-1216')</a></li>
-                            <li><a href="{{route('order-track')}}">@lang('info@ridersgroupbd.com')</a></li>
-                            <li><a href="{{route('order-track')}}">@lang('+88 01989 699 314')</a></li>
                         </ul>
                     </div>
                     <div class="left-side">
@@ -66,9 +66,9 @@
                             
                         </a>
                     </div>
-                    <h2  class="title mr-auto pl-3 d-inline">
-				RIDERS Star Group Ltd.			
-			    </h2>
+                    <h3  class="title mr-auto pl-3 d-inline">
+				                RIDERS Star Group Ltd.			
+			    </h3>
                     
                 </div>
             </div>
@@ -84,7 +84,7 @@
                             <a href="{{route('home')}}">@lang('Home')</a>
                         </li>
                         <li class="view-category d-none d-lg-block ">
-                            <a href="javascript:void(0)">@lang('Products')<i class="las la-angle-down"></i></a
+                            <a href="javascript:void(0)">@lang('Products')<i class="las la-angle-down"></i></a>
                         </li>
                         <li>
                             <a href="{{route('about_us')}}">@lang('About Us')</a>

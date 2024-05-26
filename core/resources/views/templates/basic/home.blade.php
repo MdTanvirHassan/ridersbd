@@ -25,13 +25,13 @@
     @include($activeTemplate.'sections.banners_middle')
 
     
-    @php
+    {{-- @php
         $f_categories = $categories->where('in_filter_menu');
     @endphp
 
     @if($f_categories->count()> 0)
         @include($activeTemplate.'sections.filter_categories', ['f_categories'=> $f_categories])
-    @endif
+    @endif --}}
 
     @if($top_selling_products->count() > 0)
     @include($activeTemplate.'sections.top_selling_products', ['products'=> $top_selling_products])

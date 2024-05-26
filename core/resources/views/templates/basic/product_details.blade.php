@@ -1,9 +1,14 @@
 @extends($activeTemplate .'layouts.master')
 
 @section('content')
+<style>
+    .background-gray{
+        background-color: #f5f5f5!important;
+    }
+</style>
 
 <!-- Product Single Section Starts Here -->
-<div class="category-section padding-bottom-half padding-top oh">
+<div class="category-section padding-bottom-half padding-top oh background-gray">
     <div class="container">
         <div class="row product-details-wrapper">
             <div class="col-lg-5 variant-images">
@@ -36,7 +41,7 @@
             </div>
 
 
-            <div class="col-lg-7">
+            <div class="col-lg-7 bg-white p-4">
                 <div class="product-details-content product-details">
                     <h4 class="title">{{__($product->name)}}</h4>
 
