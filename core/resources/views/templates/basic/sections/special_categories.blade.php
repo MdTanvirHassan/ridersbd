@@ -36,8 +36,12 @@
                 <div class="col-md-7">
                     <div class="pb-3 text-center m-uto" >
                         <h3 class="text-center" >About Us</h3>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div style="border-top: 3px solid #000; width: 10%;"></div>
+                            <div style="border-top: 3px solid #000; width: 10%;"></div>
+                        </div>
                     </div>
-                    <div>
+                    <div class="px-4">
                         <style>
                             .text-color {
                                 color: #ff6900 !important;
@@ -64,8 +68,12 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="pb-3  -ml-3">
+                    <div class="pb-3 text-center">
                         <h3 class="text-center">Why Us</h3>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div style="border-top: 3px solid #000; width: 12%;"></div>
+                            <div style="border-top: 3px solid #000; width: 12%;"></div>
+                        </div>
                     </div>
                     <div>
                         <ul style="list-style-type: circle;" class="">

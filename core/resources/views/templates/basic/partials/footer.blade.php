@@ -8,139 +8,142 @@
 <!-- Footer Section Starts Here -->
 
 <!-- Footer Section Ends Here -->
-<div class="full-container" style="background-color: transparent; background-image: linear-gradient(35deg, #030303 45%, #3D3D3D 45%); color:white">
+<div class="full-container"
+    style="background-color: transparent; background-image: linear-gradient(35deg, #030303 45%, #3D3D3D 45%); color:white">
     <div class="container">
-    <div class="row p-5">
-        {{-- <div class="col-12"> --}}
-        <div class="col-sm-12 col-md-6">
-            <div class="">
-                <link rel="stylesheet"
-                    href="https://ridersgroupbd.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-                <ul class="">
-                    <li class="" style="font-size: 24px; font-weight: bold">
-                        <span class="">
-                            <i aria-hidden="true" class="fas fa-map-marker-alt" style="color: #ff6900"></i>
-                        </span>
-                        <span class="" >Reach Us</span>
-                    </li>
-                </ul>
+        <div class="row p-5">
+            {{-- <div class="col-12"> --}}
+            <div class="col-sm-12 col-md-6">
                 <div class="">
-                    <h4 class="text-white pb-1">Md. Towhidur Rahman (C.E.O)</h4>
-                </div>
-                <div class="">
-                    <p>
-                        <span style="font-size: 14pt;">
-                            <strong>RIDERS Star Group Ltd.</strong>
-                        </span>
-                    </p>
-                    <p>3/A, Fair Plaza, Level-10 Mirpur-1, Dhaka-1216</p>
-                </div>
-                <div class="mb-5"></div>
-                <hr>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="d-flex justify-content-between">
-                <div class=""  >
-                    <span class="" style="font-size: 24px; font-weight: bold">
-                        <i aria-hidden="true"  style="color: #ff6900" class="fas fa-phone-alt"></i>
-                    </span>
-                    <span class="mb-2" style="font-size: 24px; font-weight: bold">Call Us</span>
-                    <div class="mt-4">
-                        <p class="">
-                            +88 01989 699 314 <br>+88 01760 411 499
-                        </p>
-                    </div>
-                </div>
-
-                <div class="">
+                    <link rel="stylesheet"
+                        href="https://ridersgroupbd.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                    <ul class="">
+                        <li class="" style="font-size: 24px; font-weight: bold">
+                            <span class="">
+                                <i aria-hidden="true" class="fas fa-map-marker-alt" style="color: #ff6900"></i>
+                            </span>
+                            <span class="">Reach Us</span>
+                        </li>
+                    </ul>
                     <div class="">
-                        <div class=""
-                            data-id="542afe1e" data-element_type="widget" data-widget_type="icon-list.default">
-                            <div class="">
-                                <ul class="">
-                                    <li class=""  style="font-size: 24px; font-weight: bold">
-                                        <span class="">
-                                            <i aria-hidden="true" class="fas fa-share-alt"  style="color: #ff6900"></i>
-                                        </span>
-                                        <span class="">Share Us</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <h4 class="text-white pb-1">Md. Towhidur Rahman (C.E.O)</h4>
+                    </div>
+                    <div class="">
+                        <p>
+                            <span style="font-size: 14pt;">
+                                <strong>RIDERS Star Group Ltd.</strong>
+                            </span>
+                        </p>
+                        <p>3/A, Fair Plaza, Level-10 Mirpur-1, Dhaka-1216</p>
+                    </div>
+                    <div class="mb-5"></div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="d-flex justify-content-between">
+                    <div class="">
+                        <span class="" style="font-size: 24px; font-weight: bold">
+                            <i aria-hidden="true" style="color: #ff6900" class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="mb-2" style="font-size: 24px; font-weight: bold">Call Us</span>
+                        <div class="mt-4">
+                            <p class="">
+                                +88 01989 699 314 <br>+88 01760 411 499
+                            </p>
                         </div>
-                        <div class="elementor-element elementor-element-1214ba2b e-grid-align-left elementor-shape-rounded elementor-grid-0 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-social-icons"
-                            data-id="1214ba2b" data-element_type="widget" data-widget_type="social-icons.default">
-                            <div class="">
-                                <style>
-                                    .elementor-widget-social-icons.elementor-grid-0 .,
-                                    .elementor-widget-social-icons.elementor-grid-mobile-0 .,
-                                    .elementor-widget-social-icons.elementor-grid-tablet-0 . {
-                                        line-height: 1;
-                                        font-size: 0
-                                    }
+                    </div>
 
-                                    .elementor-social-icon {
-                                        font-size: 25px;
-                                        width: 40px;
-                                        height: 40px;
-                                        border-radius: 10%;
-                                        display: inline-flex;
-                                        align-items: center;
-                                        justify-content: center;
-                                        text-align: center;
-                                        cursor: pointer;
-                                        margin: 5px;
-                                    }
+                    <div class="">
+                        <div class="">
+                            <div class="" data-id="542afe1e" data-element_type="widget"
+                                data-widget_type="icon-list.default">
+                                <div class="">
+                                    <ul class="">
+                                        <li class="" style="font-size: 24px; font-weight: bold">
+                                            <span class="">
+                                                <i aria-hidden="true" class="fas fa-share-alt"
+                                                    style="color: #ff6900"></i>
+                                            </span>
+                                            <span class="">Share Us</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-1214ba2b e-grid-align-left elementor-shape-rounded elementor-grid-0 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-social-icons"
+                                data-id="1214ba2b" data-element_type="widget" data-widget_type="social-icons.default">
+                                <div class="">
+                                    <style>
+                                        .elementor-widget-social-icons.elementor-grid-0 .,
+                                        .elementor-widget-social-icons.elementor-grid-mobile-0 .,
+                                        .elementor-widget-social-icons.elementor-grid-tablet-0 . {
+                                            line-height: 1;
+                                            font-size: 0
+                                        }
 
-                                    .elementor-social-icon-facebook {
-                                        background-color: #3b5998;
-                                        color: #ffffff !important;
-                                    }
+                                        .elementor-social-icon {
+                                            font-size: 25px;
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 10%;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            text-align: center;
+                                            cursor: pointer;
+                                            margin: 5px;
+                                        }
 
-                                    .elementor-social-icon-youtube {
-                                        background-color: #cd201f;
-                                        color: #ffffff !important;
-                                    }
+                                        .elementor-social-icon-facebook {
+                                            background-color: #3b5998;
+                                            color: #ffffff !important;
+                                        }
 
-                                    .elementor-social-icon-shopping-cart {
-                                        background-color: #05a50d;
-                                        color: #ffffff !important;
-                                    }
-                                </style>
-                                <div class="elementor-social-icons-wrapper">
-                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
-                                        href="https://www.facebook.com/Rgroup.bd/" target="_blank">
-                                        <i class="fab fa-facebook "></i>
-                                    </a>
-                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube"
-                                        href="https://www.youtube.com/channel/UCPwUBeHoUT1OoQGrzUanrjw" target="_blank">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-shopping-cart"
-                                        href="https://www.orababa.com/" target="_blank">
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </a>
+                                        .elementor-social-icon-youtube {
+                                            background-color: #cd201f;
+                                            color: #ffffff !important;
+                                        }
+
+                                        .elementor-social-icon-shopping-cart {
+                                            background-color: #05a50d;
+                                            color: #ffffff !important;
+                                        }
+                                    </style>
+                                    <div class="elementor-social-icons-wrapper">
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
+                                            href="https://www.facebook.com/Rgroup.bd/" target="_blank">
+                                            <i class="fab fa-facebook "></i>
+                                        </a>
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube"
+                                            href="https://www.youtube.com/channel/UCPwUBeHoUT1OoQGrzUanrjw"
+                                            target="_blank">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-shopping-cart"
+                                            href="https://www.orababa.com/" target="_blank">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <hr>
-            <div class="">
-                <ul class="s">
-                    <li class="" style="font-size: 24px; font-weight: bold">
-                        <span class="">
-                            <i aria-hidden="true" class="far fa-envelope"  style="color: #ff6900"></i>
-                        </span>
-                        <span class="">Send E-mail</span>
-                    </li>
-                </ul>
+                <hr>
+                <div class="">
+                    <ul class="s">
+                        <li class="" style="font-size: 24px; font-weight: bold">
+                            <span class="">
+                                <i aria-hidden="true" class="far fa-envelope" style="color: #ff6900"></i>
+                            </span>
+                            <span class="">Send E-mail</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 </div>
 
@@ -151,9 +154,10 @@
     }
 
     a {
-        color: #ffffff ;
+        color: #ffffff;
     }
-    .footer-link:hover{
+
+    .footer-link:hover {
         color: #030303;
         font-weight: bold;
     }
@@ -161,15 +165,17 @@
     li {
         font-size: 15px;
     }
-    .develop-by{
+
+    .develop-by {
         color: #ff6900;
     }
-    .develop-by:hover{
+
+    .develop-by:hover {
         color: #3b5998;
     }
 </style>
 <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo"
-    style="background-color: #ff6900; color:#ffffff!important" class="p-5 shadow-lg">
+    style="background-color: #ff6900; color:#ffffff!important" class="p-5 shadow-lg d-none d-md-block">
     <div class='d-flex container'>
         <div class="mr-5">
             <div class="" data-id="65d90d50" data-element_type="widget" data-widget_type="heading.default">
@@ -179,10 +185,10 @@
             </div>
             <div class="" data-id="39971a03" data-element_type="widget" data-widget_type="icon-list.default">
                 <div class="">
-                    
+
                     <ul class="text-white">
                         <li class="text-color">
-                            <a  class="footer-link"  href="https://ridersgroupbd.com/">
+                            <a class="footer-link" href="https://ridersgroupbd.com/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -199,22 +205,22 @@
                         </li>
                         <li class="">
                             <a href="#" class="footer-link">
-                            <span class="">
-                                <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
-                            </span>
-                            <span class="">Distributor Enquiry Form</span>
-                        </a> 
+                                <span class="">
+                                    <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="">Distributor Enquiry Form</span>
+                            </a>
                         </li>
                         <li class="">
                             <a href="#" class="footer-link">
-                            <span class="">
-                                <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
-                            </span>
-                            <span class="">Testimonial</span>
-                        </a> 
+                                <span class="">
+                                    <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="">Testimonial</span>
+                            </a>
                         </li>
                         <li class="">
-                            <a  class="footer-link"  href="https://ridersgroupbd.com/video-gallery/">
+                            <a class="footer-link" href="https://ridersgroupbd.com/video-gallery/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -223,14 +229,14 @@
                         </li>
                         <li class="">
                             <a href="#" class="footer-link">
-                            <span class="">
-                                <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
-                            </span>
-                            <span class="">Sitemap</span>
-                        </a> 
+                                <span class="">
+                                    <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
+                                </span>
+                                <span class="">Sitemap</span>
+                            </a>
                         </li>
                         <li class="">
-                            <a class="footer-link"  href="https://ridersgroupbd.com/contact-us/">
+                            <a class="footer-link" href="https://ridersgroupbd.com/contact-us/">
                                 <span class="">
                                     <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                 </span>
@@ -244,16 +250,19 @@
         <div class="px-5 ml-5">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="" data-id="214e3ffc" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="" data-id="214e3ffc" data-element_type="widget"
+                        data-widget_type="heading.default">
                         <div class="">
                             <h3 class="text-white">Our Products</h3>
                         </div>
                     </div>
-                    <div class="" data-id="5ff08292" data-element_type="widget" data-widget_type="icon-list.default">
+                    <div class="" data-id="5ff08292" data-element_type="widget"
+                        data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -263,11 +272,13 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="" data-id="4ac329be" data-element_type="widget" data-widget_type="icon-list.default">
+                    <div class="" data-id="4ac329be" data-element_type="widget"
+                        data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/apparel-textile-machinery/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/machinery/apparel-textile-machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -275,7 +286,8 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/food-beverage-machinery/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/machinery/food-beverage-machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -286,13 +298,15 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-md-6 mt-4">
-                    <div class="" data-id="4ac329be" data-element_type="widget" data-widget_type="icon-list.default">
+                    <div class="" data-id="4ac329be" data-element_type="widget"
+                        data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/machinery/packaging-machines/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/machinery/packaging-machines/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -300,7 +314,8 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="https://ridersgroupbd.com/product-category/machinery/plastic-rubber-processing-machinery/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/machinery/plastic-rubber-processing-machinery/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -315,7 +330,8 @@
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/consumer-electronics/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/consumer-electronics/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -327,14 +343,15 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <div class="" data-id="15b29455" data-element_type="widget" data-widget_type="icon-list.default">
+                    <div class="" data-id="15b29455" data-element_type="widget"
+                        data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
                                 <li class="">
-                                    <a class="footer-link"  href="https://ridersgroupbd.com/product-category/apparel/">
+                                    <a class="footer-link" href="https://ridersgroupbd.com/product-category/apparel/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -342,7 +359,8 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a  class="footer-link" href="https://ridersgroupbd.com/product-category/vehicle-parts-accessories/">
+                                    <a class="footer-link"
+                                        href="https://ridersgroupbd.com/product-category/vehicle-parts-accessories/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
                                         </span>
@@ -353,12 +371,13 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-md-6">
-                    <div class="" data-id="61bd0b3" data-element_type="widget" data-widget_type="button.default">
+                    <div class="" data-id="61bd0b3" data-element_type="widget"
+                        data-widget_type="button.default">
                         <div class="">
                             <div class="">
-                                <a  class="footer-link"  href="https://ridersgroupbd.com/shop/">
+                                <a class="footer-link" href="https://ridersgroupbd.com/shop/">
                                     <span class="">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-plus"></i>
@@ -372,18 +391,19 @@
                 </div>
             </div>
         </div>
-        
+
 
     </div>
 </footer>
 
 
 <section class="p-2" style="background-image: linear-gradient(rgb(204, 198, 198), white);">
-        <div class="container">
-            <span class="text-sm" style="font-size: 14px">Copyright © 2024 RIDERS Star Group Ltd. | <a href="https://f3solution.com/">
-                <span class="develop-by"  style="font-size: 14px">Design &amp;Development by F3 Solution</span>
+    <div class="container">
+        <span class="text-sm" style="font-size: 14px">Copyright © 2024 RIDERS Star Group Ltd. | <a
+                href="https://f3solution.com/">
+                <span class="develop-by" style="font-size: 14px">Design &amp;Development by F3 Solution</span>
             </a></span>
-        </div>    
+    </div>
 </section>
 
 

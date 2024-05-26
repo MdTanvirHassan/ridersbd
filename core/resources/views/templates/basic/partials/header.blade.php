@@ -1,93 +1,138 @@
+<!-- Header Section Starts Here -->
+<header>
+    <div class="header-top bg-3 py-1 border-bottom-1 d-none d-lg-block">
+        <div class="container">
+            <div class="header-top-wrap d-flex flex-wrap justify-content-between align-items-center">
+                <div class="right-side">
+                    <ul>
+                        <li><a href="{{ route('order-track') }}">@lang('+88 01989 699 314')</a></li>
+                        <li><a href="{{ route('order-track') }}">@lang('info@ridersgroupbd.com')</a></li>
 
-    <!-- Header Section Starts Here -->
-    <header>
-        <div class="header-top bg-3 py-1 border-bottom-1 d-none d-lg-block">
-            <div class="container">
-                <div class="header-top-wrap d-flex flex-wrap justify-content-between align-items-center">
-                    <div class="right-side">
-                        <ul>
-                            <li><a href="{{route('order-track')}}">@lang('+88 01989 699 314')</a></li>
-                            <li><a href="{{route('order-track')}}">@lang('info@ridersgroupbd.com')</a></li>
-
-                            <li><a href="{{route('order-track')}}">@lang('3/A, Fair Plaza, Level-10 Mirpur-1, Dhaka-1216')</a></li>
-                        </ul>
-                    </div>
-                    <div class="left-side">
-                        <div class="language_setting">
-                            <div class="active_lang ">
+                        <li><a href="{{ route('order-track') }}">@lang('3/A, Fair Plaza, Level-10 Mirpur-1, Dhaka-1216')</a></li>
+                    </ul>
+                </div>
+                <div class="left-side">
+                    <div class="language_setting">
+                        <div class="active_lang ">
 
 
-                                @if (session('lang') == 'en')
-
+                            @if (session('lang') == 'en')
                                 @php
                                     $default = $language->where('code', 'en')->first();
                                 @endphp
 
-                                    <div class="img">
-                                        <img src="{{ getImage('assets/images/lang' .'/'. $default['icon'],'64x64')}}" alt="@lang('image')">
-                                    </div>
-                                    <span class="text-capitalize">@lang('English')</span>
-                                @else
-                                    @php $lang = $language->where('code', session('lang'))->first() @endphp
-                                    <div class="img">
-                                        <img src="{{ getImage('assets/images/lang' .'/'. $lang['icon'],'64x64')}}" alt="@lang('country')">
-                                    </div>
-                                    <span class="text-capitalize">{{__($lang->name)}}</span>
-                                @endif
+                                <div class="img">
+                                    <img src="{{ getImage('assets/images/lang' . '/' . $default['icon'], '64x64') }}"
+                                        alt="@lang('image')">
+                                </div>
+                                <span class="text-capitalize">@lang('English')</span>
+                            @else
+                                @php $lang = $language->where('code', session('lang'))->first() @endphp
+                                <div class="img">
+                                    <img src="{{ getImage('assets/images/lang' . '/' . $lang['icon'], '64x64') }}"
+                                        alt="@lang('country')">
+                                </div>
+                                <span class="text-capitalize">{{ __($lang->name) }}</span>
+                            @endif
 
-                                <i class="las la-caret-down"></i>
-                            </div>
-                            <ul class="language_setting_list">
-                                @foreach ($language as $lang)
+                            <i class="las la-caret-down"></i>
+                        </div>
+                        <ul class="language_setting_list">
+                            @foreach ($language as $lang)
                                 @if ($lang->code == request()->session()->get('lang'))
-                                @continue
+                                    @continue
                                 @endif
                                 <li>
                                     <a href="{{ route('lang', $lang->code) }}">
                                         <div class="img">
-                                            <img src="{{ getImage('assets/images/lang' .'/'. $lang['icon'],'64x64')}}" alt="@lang('country')">
+                                            <img src="{{ getImage('assets/images/lang' . '/' . $lang['icon'], '64x64') }}"
+                                                alt="@lang('country')">
                                         </div>
-                                        <span class="text-capitalize">{{__($lang->name)}}</span>
+                                        <span class="text-capitalize">{{ __($lang->name) }}</span>
                                     </a>
                                 </li>
-                                @endforeach
-                            </ul>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle bg-white py-3">
+        <div class="container">
+            <div class="header-wrapper justify-content-between align-items-center">
+                <div class="header-wrapper justify-content-between align-items-center">
+                    <div class="logo" class="d-inline">
+                        <a href="{{ route('home') }}">
+                            <img src="{{ getImage('assets/images/logoIcon/logo.png', '183x54') }}"
+                                alt="@lang('logo')">
+
+                        </a>
+                    </div>
+                    <h4 class="title2 mr-auto pl-3 d-inline">
+                        RIDERS Star Group Ltd.
+                    </h4>
+                </div>
+                <style>
+                    .email-bg {
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: #ff6900;
+                        color: #fff;
+                        border-radius: 50px;
+                    }
+                    .contact-bg {
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: #000;
+                        color: #fff;
+                        border-radius: 50px;
+                    }
+
+                    .email-bg:hover {
+                        background-color: #fff;
+                        color: #ff6900;
+                        border: 1px solid #ff6900;
+                    }
+                </style>
+                <div class="d-none d-md-block">
+                    <div class=" d-flex mx-4">
+
+                        <div class="p-2 px-4 mx-2 contact-bg">
+                            <span class="">
+                                <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                            </span>
+                            <span class="">+8801989699314 
+                                {{-- <br> <span>89% Response Rate</span> --}}
+                            </span>
+                        </div>
+                        <div class="p-2 px-4 email-bg">
+                            <span class="">
+                                <i aria-hidden="true" class="far fa-envelope"></i>
+                            </span>
+                            <a href="mailto:example@gmail.com"><span class="">Send E-mail</span></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="header-middle bg-white py-3">
-            <div class="container">
-                <div class="header-wrapper justify-content-between align-items-center">
-                    <div class="logo" class="d-inline">
-                        <a href="{{route('home')}}">
-                            <img src="{{ getImage('assets/images/logoIcon/logo.png', '183x54') }}" alt="@lang('logo')" >
-                            
-                        </a>
-                    </div>
-                    <h3  class="title mr-auto pl-3 d-inline">
-				                RIDERS Star Group Ltd.			
-			    </h3>
-                    
-                </div>
-            </div>
-        </div>
 
-        <div class="header-bottom bg-3 py-3">
-            <div class="container">
-                <div class="header-bottom-wrapper d-flex flex-wrap justify-content-between align-items-center">
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom bg-3 py-3">
+        <div class="container">
+            <div class="header-bottom-wrapper d-flex flex-wrap justify-content-between align-items-center">
                 <div class="header-wrapper justify-content-between align-items-center">
-                    
+
                     <ul class="menu ml-auto d-none d-lg-flex">
                         <li>
-                            <a href="{{route('home')}}">@lang('Home')</a>
+                            <a href="{{ route('home') }}">@lang('Home')</a>
                         </li>
                         <li class="view-category d-none d-lg-block ">
                             <a href="javascript:void(0)">@lang('Products')<i class="las la-angle-down"></i></a>
                         </li>
                         <li>
-                            <a href="{{route('about_us')}}">@lang('About Us')</a>
+                            <a href="{{ route('about_us') }}">@lang('About Us')</a>
                         </li>
 
                         <!--<li>-->
@@ -103,226 +148,241 @@
                         <span></span>
                     </div>
                 </div>
-                    
-                    <form action="{{route('product.search')}}" method="GET" class="header-search-form ml-auto @if(!request()->routeIs('home')) w-100 @endif" >
-                        <div class="header-form-group">
-                            <input type="text" name="search_key" value="{{request()->search_key}}" placeholder="@lang('Search')...">
-                            <button type="submit"><i class="las la-search"></i></button>
-                        </div>
-                        <div class="select-item">
-                            <select class="select-bar" name="category_id">
-                                <option selected value="0">@lang('All Categories')</option>
-                                @foreach ($categories as $category)
-                                    <option value="{{ $category->id }}">@lang($category->name)</option>
-                                    @php
-                                        $prefix = '--'
-                                    @endphp
-                                    @foreach ($category->allSubcategories as $subcategory)
-                                        @include($activeTemplate.'partials.subcategories', ['subcategory' => $subcategory, 'prefix'=>$prefix])
-                                        <option value="{{ $subcategory->id }}">
-                                            {{ $prefix }}@lang($subcategory->name)
-                                        </option>
-                                    @endforeach
-                                @endforeach
-                            </select>
-                        </div>
-                    </form>
-                    @if(request()->routeIs('home'))
-                        <div class="right-toggle text-right d-xl-none">
-                            <i class="las la-ellipsis-v"></i>
-                        </div>
-                    @endif
-                    
-                </div>
-                <div class="pos-rel d-none d-lg-block">
-                    <div class="left-category single-style">
-                        <ul class="categories">
+
+                <form action="{{ route('product.search') }}" method="GET"
+                    class="header-search-form ml-auto @if (!request()->routeIs('home')) w-100 @endif">
+                    <div class="header-form-group">
+                        <input type="text" name="search_key" value="{{ request()->search_key }}"
+                            placeholder="@lang('Search')...">
+                        <button type="submit"><i class="las la-search"></i></button>
+                    </div>
+                    <div class="select-item">
+                        <select class="select-bar" name="category_id">
+                            <option selected value="0">@lang('All Categories')</option>
                             @foreach ($categories as $category)
+                                <option value="{{ $category->id }}">@lang($category->name)</option>
+                                @php
+                                    $prefix = '--';
+                                @endphp
+                                @foreach ($category->allSubcategories as $subcategory)
+                                    @include($activeTemplate . 'partials.subcategories', [
+                                        'subcategory' => $subcategory,
+                                        'prefix' => $prefix,
+                                    ])
+                                    <option value="{{ $subcategory->id }}">
+                                        {{ $prefix }}@lang($subcategory->name)
+                                    </option>
+                                @endforeach
+                            @endforeach
+                        </select>
+                    </div>
+                </form>
+                @if (request()->routeIs('home'))
+                    <div class="right-toggle text-right d-xl-none">
+                        <i class="las la-ellipsis-v"></i>
+                    </div>
+                @endif
+
+            </div>
+            <div class="pos-rel d-none d-lg-block">
+                <div class="left-category single-style">
+                    <ul class="categories">
+                        @foreach ($categories as $category)
                             <li>
-                                <a href="{{ route('products.category', ['id'=>$category->id, 'slug'=>slug($category->name)]) }}">
+                                <a
+                                    href="{{ route('products.category', ['id' => $category->id, 'slug' => slug($category->name)]) }}">
                                     @php echo $category->icon @endphp {{ $category->name }}
                                 </a>
 
                                 <div class="cate-icon">
                                     <i class="las la-angle-down"></i>
                                 </div>
-                                @if($category->allSubcategories->count() > 0)
-                                <ul class="sub-category">
-                                    @foreach ($category->allSubcategories as $subcategory)
-                                        @include($activeTemplate.'partials.menu_subcategories', ['subcategory' => $subcategory])
-                                    @endforeach
-                                </ul>
+                                @if ($category->allSubcategories->count() > 0)
+                                    <ul class="sub-category">
+                                        @foreach ($category->allSubcategories as $subcategory)
+                                            @include($activeTemplate . 'partials.menu_subcategories', [
+                                                'subcategory' => $subcategory,
+                                            ])
+                                        @endforeach
+                                    </ul>
                                 @endif
                             </li>
-                            @endforeach
-                        </ul>
-                    </div>
+                        @endforeach
+                    </ul>
                 </div>
-
             </div>
+
         </div>
-    </header>
+    </div>
+</header>
 
-    <div class="mobile-menu d-lg-none">
-        <div class="mobile-menu-header">
-            <div class="mobile-menu-close">
-                <i class="las la-times"></i>
-            </div>
-            <div class="logo">
-                <a href="{{ route('home') }}">
-                    <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
-                </a>
-            </div>
-            <div class="language_setting">
-                <div class="active_lang cl-white">
+<div class="mobile-menu d-lg-none">
+    <div class="mobile-menu-header">
+        <div class="mobile-menu-close">
+            <i class="las la-times"></i>
+        </div>
+        <div class="logo">
+            <a href="{{ route('home') }}">
+                <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
+            </a>
+        </div>
+        <div class="language_setting">
+            <div class="active_lang cl-white">
 
-                    @if (session('lang') == 'en')
-
+                @if (session('lang') == 'en')
                     @php
                         $default = $language->where('code', 'en')->first();
                     @endphp
-                        <div class="img">
-                            <img src="{{ getImage('assets/images/lang' .'/'. $default['icon'],'64x64')}}" alt="@lang('image')">
-                        </div>
-                        <span class="text-capitalize">@lang('English')</span>
-                    @else
-                        @php $lang = $language->where('code', session('lang'))->first() @endphp
-                        <div class="img">
-                            <img src="{{ getImage('assets/images/lang' .'/'. $lang['icon'],'64x64')}}" alt="@lang('country')">
-                        </div>
-                        <span class="text-capitalize">{{__($lang->name)}}</span>
-                    @endif
-                    <i class="las la-caret-down"></i>
-                </div>
-                <ul class="language_setting_list">
-                    @foreach ($language as $lang)
+                    <div class="img">
+                        <img src="{{ getImage('assets/images/lang' . '/' . $default['icon'], '64x64') }}"
+                            alt="@lang('image')">
+                    </div>
+                    <span class="text-capitalize">@lang('English')</span>
+                @else
+                    @php $lang = $language->where('code', session('lang'))->first() @endphp
+                    <div class="img">
+                        <img src="{{ getImage('assets/images/lang' . '/' . $lang['icon'], '64x64') }}"
+                            alt="@lang('country')">
+                    </div>
+                    <span class="text-capitalize">{{ __($lang->name) }}</span>
+                @endif
+                <i class="las la-caret-down"></i>
+            </div>
+            <ul class="language_setting_list">
+                @foreach ($language as $lang)
                     @if ($lang->code == request()->session()->get('lang'))
-                    @continue
+                        @continue
                     @endif
 
                     <li>
                         <a href="{{ route('lang', $lang->code) }}">
                             <div class="img">
-                                <img src="{{ getImage('assets/images/lang' .'/'. $lang['icon'],'64x64')}}" alt="@lang('country')">
+                                <img src="{{ getImage('assets/images/lang' . '/' . $lang['icon'], '64x64') }}"
+                                    alt="@lang('country')">
                             </div>
-                            <span class="text-capitalize">{{__($lang->name)}}</span>
+                            <span class="text-capitalize">{{ __($lang->name) }}</span>
                         </a>
                     </li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+    <ul class="nav-tabs nav border-0">
+        <li>
+            <a href="#menu" class="active" data-toggle="tab">@lang('Menu')</a>
+        </li>
+        <li>
+            <a href="#cate" data-toggle="tab">@lang('Category')</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="menu">
+            <div class="mobile-menu-body">
+                <ul class="menu mt-4">
+                    <li>
+                        <a href="{{ route('home') }}">@lang('Home')</a>
+                    </li>
 
-                    @endforeach
+                    <li>
+                        <a href="{{ route('products') }}">@lang('Products')</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('brands') }}">@lang('Brands')</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contact') }}">@lang('Contact')</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="quick-links mt-4">
+                <ul>
+                    @if ($pages->count() > 0)
+                        @foreach ($pages as $item)
+                            <li><a
+                                    href="{{ route('pages', ['id' => $item->id, 'slug' => slug($item->data_values->page_title)]) }}">@php echo __($item->data_values->page_title) @endphp</a>
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
         </div>
-        <ul class="nav-tabs nav border-0">
-            <li>
-                <a href="#menu" class="active" data-toggle="tab">@lang('Menu')</a>
-            </li>
-            <li>
-                <a href="#cate" data-toggle="tab">@lang('Category')</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade show active" id="menu">
-                <div class="mobile-menu-body">
-                    <ul class="menu mt-4">
+        <div class="t ab-pane fade" id="cate">
+            <div class="left-category single-style">
+                <ul class="categories">
+                    @foreach ($categories as $category)
                         <li>
-                            <a href="{{route('home')}}">@lang('Home')</a>
-                        </li>
-
-                        <li>
-                            <a href="{{ route('products') }}">@lang('Products')</a>
-                        </li>
-
-                        <li>
-                            <a href="{{ route('brands') }}">@lang('Brands')</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('contact') }}">@lang('Contact')</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="quick-links mt-4">
-                    <ul>
-                        @if($pages->count() > 0)
-                            @foreach ($pages as $item)
-                                <li><a href="{{route('pages', ['id' => $item->id, 'slug'=> slug($item->data_values->page_title) ])}}">@php echo __($item->data_values->page_title) @endphp</a></li>
-                            @endforeach
-                        @endif
-                    </ul>
-                </div>
-            </div>
-            <div class="t ab-pane fade" id="cate">
-                <div class="left-category single-style">
-                    <ul class="categories">
-                        @foreach ($categories as $category)
-                        <li>
-                            <a href="{{ route('products.category', ['id'=>$category->id, 'slug'=>slug($category->name)]) }}">
+                            <a
+                                href="{{ route('products.category', ['id' => $category->id, 'slug' => slug($category->name)]) }}">
                                 @php echo $category->icon @endphp {{ $category->name }}
                             </a>
                             <div class="cate-icon">
                                 <i class="las la-angle-down"></i>
                             </div>
 
-                            @if($category->allSubcategories->count()>0)
-                            <ul class="sub-category">
-                                @foreach ($category->allSubcategories as $subcategory)
-                                    @include($activeTemplate.'partials.menu_subcategories', ['subcategory' => $subcategory])
-                                @endforeach
-                            </ul>
+                            @if ($category->allSubcategories->count() > 0)
+                                <ul class="sub-category">
+                                    @foreach ($category->allSubcategories as $subcategory)
+                                        @include($activeTemplate . 'partials.menu_subcategories', [
+                                            'subcategory' => $subcategory,
+                                        ])
+                                    @endforeach
+                                </ul>
                             @endif
                         </li>
-                        @endforeach
-                    </ul>
-                </div>
+                    @endforeach
+                </ul>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- ===========Cart=========== -->
-    <div id="body-overlay" class="body-overlay"></div>
-    <div class="cart-sidebar-area" id="cart-sidebar-area">
-        <div class="top-content">
-            <a href="{{ route('home') }}" class="logo">
-                <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
-            </a>
-            <span class="side-sidebar-close-btn"><i class="las la-times"></i></span>
-        </div>
-        <div class="bottom-content">
-            <div class="cart-products cart--products">
-
-
-            </div>
-        </div>
-    </div>
-    <!-- ===========Cart End=========== -->
-
-    <!-- ===========Wishlist=========== -->
-    <div class="cart-sidebar-area" id="wish-sidebar-area">
-        <div class="top-content">
-            <a href="{{ route('home') }}" class="logo">
-                <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
-            </a>
-            <span class="side-sidebar-close-btn"><i class="las la-times"></i></span>
-        </div>
-        <div class="bottom-content">
-            <div class="cart-products wish-products">
-
-            </div>
-        </div>
-    </div>
-    <!-- ===========Wishlist End=========== -->
-
-    <!-- Header Section Ends Here -->
-    <div class="dashboard-menu before-login-menu d-flex flex-wrap justify-content-center flex-column">
+<!-- ===========Cart=========== -->
+<div id="body-overlay" class="body-overlay"></div>
+<div class="cart-sidebar-area" id="cart-sidebar-area">
+    <div class="top-content">
+        <a href="{{ route('home') }}" class="logo">
+            <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
+        </a>
         <span class="side-sidebar-close-btn"><i class="las la-times"></i></span>
-        @guest
+    </div>
+    <div class="bottom-content">
+        <div class="cart-products cart--products">
+
+
+        </div>
+    </div>
+</div>
+<!-- ===========Cart End=========== -->
+
+<!-- ===========Wishlist=========== -->
+<div class="cart-sidebar-area" id="wish-sidebar-area">
+    <div class="top-content">
+        <a href="{{ route('home') }}" class="logo">
+            <img src="{{ getImage('assets/images/logoIcon/logo_2.png', '183x54') }}" alt="@lang('logo')">
+        </a>
+        <span class="side-sidebar-close-btn"><i class="las la-times"></i></span>
+    </div>
+    <div class="bottom-content">
+        <div class="cart-products wish-products">
+
+        </div>
+    </div>
+</div>
+<!-- ===========Wishlist End=========== -->
+
+<!-- Header Section Ends Here -->
+<div class="dashboard-menu before-login-menu d-flex flex-wrap justify-content-center flex-column">
+    <span class="side-sidebar-close-btn"><i class="las la-times"></i></span>
+    @guest
         <div class="login-wrapper py-5 px-4">
             <h4 class="subtitle cl-white">@lang('My Account')</h4>
-            <form method="POST" action="{{ route('user.login')}}" class="sign-in-form">
+            <form method="POST" action="{{ route('user.login') }}" class="sign-in-form">
                 @csrf
                 <div class="form-group">
                     <label for="login-username">@lang('Username')</label>
-                    <input type="text" class="form-control" name="username" id="login-username" value="{{ old('email') }}" placeholder="@lang('Username')">
+                    <input type="text" class="form-control" name="username" id="login-username"
+                        value="{{ old('email') }}" placeholder="@lang('Username')">
                 </div>
                 <div class="form-group">
                     <label for="login-pass">@lang('Password')</label>
@@ -331,12 +391,13 @@
 
                 @php $captcha =   getCustomCaptcha('login captcha') @endphp
 
-                @if($captcha)
-                <div class="form-group">
-                    <label for="password">@lang('Captcha')</label>
-                    <input type="text" class="mb-4" name="captcha" autocomplete="off" placeholder="@lang('Enter The Code Below')">
-                    @lang($captcha)
-                </div>
+                @if ($captcha)
+                    <div class="form-group">
+                        <label for="password">@lang('Captcha')</label>
+                        <input type="text" class="mb-4" name="captcha" autocomplete="off"
+                            placeholder="@lang('Enter The Code Below')">
+                        @lang($captcha)
+                    </div>
                 @endif
 
                 <div class="form-group text-right pt-2">
@@ -345,22 +406,23 @@
 
                 <div class="pt-2 mb-0">
                     <p class="create-accounts">
-                        <a href="{{route('user.password.request')}}" class="mb-2">@lang('Forgot Password')?</a>
+                        <a href="{{ route('user.password.request') }}" class="mb-2">@lang('Forgot Password')?</a>
                     </p>
                     <p class="create-accounts">
-                        <span>@lang('Don\'t have an account')? <a href="{{route('user.register')}}" class="link-color">@lang('Create An Account')</a> </span>
+                        <span>@lang('Don\'t have an account')? <a href="{{ route('user.register') }}"
+                                class="link-color">@lang('Create An Account')</a> </span>
                     </p>
                 </div>
             </form>
         </div>
-        @endguest
+    @endguest
 
-        @auth
-        @include($activeTemplate.'user.partials.dp')
+    @auth
+        @include($activeTemplate . 'user.partials.dp')
         <ul class="cl-white">
-            @include($activeTemplate.'user.partials.sidebar')
+            @include($activeTemplate . 'user.partials.sidebar')
         </ul>
-        @endauth
+    @endauth
 
 
-    </div>
+</div>
