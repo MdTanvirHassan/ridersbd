@@ -169,9 +169,9 @@
     }
 
     li {
-        font-size: 15px;
+        font-size: 16px;
         padding: 0;
-        margin-top:-15px; 
+        margin-top: -15px;
     }
 
     .develop-by {
@@ -187,7 +187,7 @@
     <div class='d-flex container'>
         <div class="mr-5">
             <div class="" data-id="65d90d50" data-element_type="widget" data-widget_type="heading.default">
-                <div class="">
+                <div class="mb-4">
                     <h3 class="text-white">Our Company</h3>
                 </div>
             </div>
@@ -260,7 +260,7 @@
                 <div class="col-md-6">
                     <div class="" data-id="214e3ffc" data-element_type="widget"
                         data-widget_type="heading.default">
-                        <div class="">
+                        <div class="mb-4">
                             <h3 class="text-white">Our Products</h3>
                         </div>
                     </div>
@@ -284,6 +284,7 @@
                         data-widget_type="icon-list.default">
                         <div class="">
                             <ul class="">
+                                <div class="ml-3">
                                 <li class="">
                                     <a class="footer-link"
                                         href="https://ridersgroupbd.com/product-category/machinery/apparel-textile-machinery/">
@@ -320,6 +321,7 @@
                                         <span class="">Plastic & Rubber Processing Machinery</span>
                                     </a>
                                 </li>
+                            </div>
                                 <li class="">
                                     <a class="footer-link"
                                         href="https://ridersgroupbd.com/product-category/consumer-electronics/">
@@ -329,26 +331,20 @@
                                         <span class="">Consumer Electronics</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mt-4">
-                    <div class="" data-id="4ac329be" data-element_type="widget"
+
+                    <div class="elementor-element elementor-element-4012f7fb elementor-icon-list--layout-traditional elementor-list-item-link-full_width exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon-list"
+                        style="margin-bottom: 30px;" data-id="4012f7fb" data-element_type="widget"
                         data-widget_type="icon-list.default">
                         <div class="">
-                            <ul class="">
-                                
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-4012f7fb elementor-icon-list--layout-traditional elementor-list-item-link-full_width exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-icon-list"
-                        data-id="4012f7fb" data-element_type="widget" data-widget_type="icon-list.default">
-                        <div class="">
-                            <ul class="">
-                                <li class="">
+                            <ul class="mb-4">
+                                <li class=""style="margin-top: 20px;">
                                     <a class="footer-link" href="https://ridersgroupbd.com/product-category/apparel/">
                                         <span class="">
                                             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
@@ -408,28 +404,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="" data-id="15b29455" data-element_type="widget"
-                        data-widget_type="icon-list.default">
-                        <div class="">
-                            <ul class="">
-                                
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6">
-                    <div class="" data-id="61bd0b3" data-element_type="widget"
-                        data-widget_type="button.default">
-                        <div class="">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
