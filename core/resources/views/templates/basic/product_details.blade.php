@@ -5,6 +5,11 @@
     .background-gray{
         background-color: #f5f5f5!important;
     }
+    @media (min-width: 992px) {
+    .padding-bottom-half {
+        padding-bottom: 0px;
+    }
+}
 </style>
 
 <!-- Product Single Section Starts Here -->

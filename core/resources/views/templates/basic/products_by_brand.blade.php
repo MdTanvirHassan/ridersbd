@@ -2,6 +2,7 @@
 
 @section('content')
  <!-- Category Section Starts Here -->
+ 
  <div class="category-section padding-bottom padding-top">
     <div class="container">
         @if($products->count() == 0)

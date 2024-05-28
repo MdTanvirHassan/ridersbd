@@ -4,6 +4,17 @@
         $footer = $footer->data_values;
     }
 @endphp
+<style>
+        
+    .title2{
+        font-size: 20px!important;
+    }
+    @media only screen and (max-width: 600px) {
+        .title2 {
+            font-size: 16px !important;
+        }
+    }
+</style>
 
 <!-- Footer Section Starts Here -->
 
@@ -26,7 +37,7 @@
                         </li>
                     </ul>
                     <div class="">
-                        <h4 class="text-white pb-1">Md. Towhidur Rahman (C.E.O)</h4>
+                        <h4 class="text-white title2 pb-1">Md. Towhidur Rahman (C.E.O)</h4>
                     </div>
                     <div class="">
                         <p>
@@ -41,7 +52,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6">
-                <div class="d-flex justify-content-between">
+                <div class="d-md-flex justify-content-between">
                     <div class="">
                         <span class="" style="font-size: 24px; font-weight: bold">
                             <i aria-hidden="true" style="color: #ff6900" class="fas fa-phone-alt"></i>
@@ -54,7 +65,7 @@
                         </div>
                     </div>
 
-                    <div class="">
+                    <div class="mt-4 mt-md-2">
                         <div class="">
                             <div class="" data-id="542afe1e" data-element_type="widget"
                                 data-widget_type="icon-list.default">
@@ -128,6 +139,15 @@
                                         <a class="elementor-icon elementor-social-icon elementor-social-icon-shopping-cart"
                                             href="https://www.orababa.com/" target="_blank">
                                             <i class="fas fa-shopping-cart"></i>
+                                        </a>
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook"
+                                            href="https://www.facebook.com/Rgroup.bd/" target="_blank">
+                                            <i class="fab fa-facebook "></i>
+                                        </a>
+                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube"
+                                            href="https://www.youtube.com/channel/UCPwUBeHoUT1OoQGrzUanrjw"
+                                            target="_blank">
+                                            <i class="fab fa-youtube"></i>
                                         </a>
                                     </div>
                                 </div>

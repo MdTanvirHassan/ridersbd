@@ -1,5 +1,16 @@
 <!-- Header Section Starts Here -->
 <header>
+    <style>
+        
+        .title2{
+            font-size: 28px!important;
+        }
+        @media only screen and (max-width: 600px) {
+            .title2 {
+                font-size: 16px !important;
+            }
+        }
+    </style>
     <div class="header-top bg-3 py-1 border-bottom-1 d-none d-lg-block">
         <div class="container">
             <div class="header-top-wrap d-flex flex-wrap justify-content-between align-items-center">
@@ -58,11 +69,11 @@
             </div>
         </div>
     </div>
-    <div class="header-middle bg-white py-3">
+    <div class="header-middle bg-white py-1">
         <div class="container">
             <div class="header-wrapper justify-content-between align-items-center">
                 <div class="header-wrapper justify-content-between align-items-center">
-                    <div class="logo" class="d-inline">
+                    <div class="logo logo-size" class="d-inline">
                         <a href="{{ route('home') }}">
                             <img src="{{ getImage('assets/images/logoIcon/logo.png', '183x54') }}"
                                 alt="@lang('logo')">
@@ -75,14 +86,14 @@
                 </div>
                 <style>
                     .email-bg {
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: bold;
                         background-color: #ff6900;
                         color: #fff;
                         border-radius: 50px;
                     }
                     .contact-bg {
-                        font-size: 18px;
+                        font-size: 16px;
                         font-weight: bold;
                         background-color: #000;
                         color: #fff;
@@ -91,7 +102,7 @@
 
                     .email-bg:hover {
                         background-color: #fff;
-                        color: #ff6900;
+                        color: #ff6900!important;
                         border: 1px solid #ff6900;
                     }
                 </style>
@@ -99,13 +110,16 @@
                     <div class=" d-flex mx-4">
 
                         <div class="p-2 px-4 mx-2 contact-bg">
-                            <span class="">
-                                <i aria-hidden="true" class="fas fa-phone-alt"></i>
-                            </span>
-                            <span class="">+8801989699314 
-                                {{-- <br> <span>89% Response Rate</span> --}}
-                            </span>
+                            <a href="tel:+8801989699314" class="text-decoration-none text-reset">
+                                <span class="">
+                                    <i aria-hidden="true" class="fas fa-phone-alt"></i>
+                                </span>
+                                <span class="">+8801989699314 
+                                    {{-- <br> <span>89% Response Rate</span> --}}
+                                </span>
+                            </a>
                         </div>
+                        
                         <div class="p-2 px-4 email-bg">
                             <span class="">
                                 <i aria-hidden="true" class="far fa-envelope"></i>
@@ -142,16 +156,21 @@
                             <a href="{{ route('contact') }}">@lang('Contact')</a>
                         </li>
                     </ul>
-                    <div class="header-bar d-lg-none">
+                    {{-- <div class="header-bar d-lg-none m-0 p-0">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <form action="{{ route('product.search') }}" method="GET"
-                    class="header-search-form ml-auto @if (!request()->routeIs('home')) w-100 @endif">
-                    <div class="header-form-group">
+                    class="header-search-form ml-auto @if (!request()->routeIs('home')) w-80 @endif">
+                    <div class="header-form-group d-flex m-auto">
+                        <div class="header-bar d-lg-none mr-4 mt-2">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         <input type="text" name="search_key" value="{{ request()->search_key }}"
                             placeholder="@lang('Search')...">
                         <button type="submit"><i class="las la-search"></i></button>
@@ -178,9 +197,9 @@
                     </div>
                 </form>
                 @if (request()->routeIs('home'))
-                    <div class="right-toggle text-right d-xl-none">
+                    {{-- <div class="right-toggle text-right d-xl-none">
                         <i class="las la-ellipsis-v"></i>
-                    </div>
+                    </div> --}}
                 @endif
 
             </div>
@@ -188,7 +207,7 @@
                 <div class="left-category single-style">
                     <ul class="categories">
                         @foreach ($categories as $category)
-                            <li>
+                            <li class="p-1">
                                 <a
                                     href="{{ route('products.category', ['id' => $category->id, 'slug' => slug($category->name)]) }}">
                                     @php echo $category->icon @endphp {{ $category->name }}
@@ -198,7 +217,7 @@
                                     <i class="las la-angle-down"></i>
                                 </div>
                                 @if ($category->allSubcategories->count() > 0)
-                                    <ul class="sub-category">
+                                    <ul class="sub-category" class="">
                                         @foreach ($category->allSubcategories as $subcategory)
                                             @include($activeTemplate . 'partials.menu_subcategories', [
                                                 'subcategory' => $subcategory,

@@ -1,4 +1,11 @@
 <!-- Category Section Starts Here -->
+<style>
+    @media (min-width: 992px) {
+    .padding-bottom-half {
+        padding-bottom: 0px;
+    }
+}
+</style>
 <div class="category-section padding-bottom-half">
     <div class="container">
         <div class="row justify-content-between">
